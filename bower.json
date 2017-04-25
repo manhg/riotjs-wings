@@ -1,0 +1,21 @@
+{
+  "name": "riotjs-wings",
+  "authors": [
+    "Giang Manh <manhg@users.noreply.github.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "riot": "^3.4.3"
+  }
+}

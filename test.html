@@ -1,0 +1,29 @@
+<script src="vendor/riot/riot.js"></script>
+<script src="riot-wings.js"></script>
+
+<div id=dropdown1></div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    riot.mount('#dropdown1', 'x-dropdown', {
+        active: {id: 2, name: 'Blue'},
+        items: [
+            {id: -3, name: 'Brown'},
+            {id: -4, name: 'Ocean'},
+            {id: -1, name: 'Yellow'},
+            {id: 0, name: 'Magenta'},
+            {id: 1, name: 'Green'},
+            {id: 2, name: 'Blue'},
+            {id: 3, name: 'Red'},
+            {id: 4, name: 'Gray'},
+            {id: 21, name: 'Green 2'},
+            {id: 22, name: 'Blue  2'},
+            {id: 23, name: 'Red   2'},
+            {id: 24, name: 'Gray  2'},
+            {id: 21, name: 'Green 3'},
+            {id: 22, name: 'Blue  3'},
+            {id: 23, name: 'Red   3'},
+            {id: 24, name: 'Gray  3'},
+        ]
+    });
+});
+</script>
