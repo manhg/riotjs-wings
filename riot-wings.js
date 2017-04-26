@@ -62,3 +62,18 @@ this.on('mount', function() {
   return null;
 });
 });
+
+riot.tag2('x-rating', '<span each="{step in STEPS}" onclick="{setValue}"> {step <= value ? \'★\': \'☆\'} </span>', 'x-rating span,[data-is="x-rating"] span{ cursor: pointer; color: #fc0; transition: all 1s ease; display: inline-block; } x-rating span:hover,[data-is="x-rating"] span:hover{ color: #f90; margin-bottom: 0.3em; }', '', function(opts) {
+this.value = +opts.value;
+
+this.STEPS = [1, 2, 3, 4, 5];
+
+this.setValue = (function(_this) {
+  return function(e) {
+    _this.update({
+      value: e.item.step
+    });
+    return _this.trigger('changed', _this.value);
+  };
+})(this);
+});

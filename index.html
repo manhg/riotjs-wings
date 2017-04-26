@@ -2,6 +2,8 @@
 <script src="riot-wings.js"></script>
 
 <div id=dropdown1></div>
+
+<div id=star1></div>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     riot.mount('#dropdown1', 'x-dropdown', {
@@ -25,5 +27,13 @@ document.addEventListener("DOMContentLoaded", function() {
             {id: 24, name: 'Gray  3'},
         ]
     });
+    
+    var rating = riot.mount('#star1', 'x-rating', {
+        value: 3
+    });
+    rating[0].on('change', function(value) {
+        alert(value);
+    });
 });
 </script>
+<script>
